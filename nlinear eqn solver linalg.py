@@ -15,7 +15,7 @@ i=0
 j=0
 while i != n:
     j=0
-    while j!= n:
+    while j != n:
         a[i,j]=float(input(print("a", i+1,j+1, "=")))
         j+=1
     i+=1
@@ -34,7 +34,9 @@ if delta==0:
 
 elif delta !=0:
     c=np.dot(linalg.inv(a),b)
-    print(c)
+    for i in c:
+        j=0
+        print("x",j+1,"1 =",round(float(i),4) )
     
     
 
